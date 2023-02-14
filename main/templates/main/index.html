@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> 여기가 index.html 입니다. <br>
+        templates/main 에서 main 안에 파일을 안넣어서 오류가 났었음. <br>
+
+    </h1>
+
+    <h4>
+        여기에 post list를 나열하려고 함.<br>
+        {% for p in posts %}
+            <h5>{{ p }}</h5>
+        {% endfor %}
+    </h4>
+
+    <h6>
+        //위와 같은 문구를 이용해서 반복문을 불러온다. 일반 변수는 % 없이 중괄호 두개를 이용하여 불러온다.
+    </h6>
+
+    <h4>
+        여기에 post list와 상세 정보를 나열하려고 함.<br>
+
+        {% for p in posts %}
+            <hr/>
+            {{p.title}}<br>
+            {{p.created_at}}<br>
+            {{p.content}}<br>
+        {% endfor %}
+    </h4>
+</body>
+</html>
