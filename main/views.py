@@ -22,4 +22,10 @@ def post_detail(request, pk):
             'post':post,
         }
     )
+
+def landing(request):
+    return render(
+        request,
+        'main/landing.html'
+    )
 # Create your views here.

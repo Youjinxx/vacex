@@ -28,10 +28,14 @@
 
         {% for p in posts %}
             <hr/>
-            {{p.title}}<br>
+            <a href=""{{p.get_absolute_url}}>{{p.title}}</a><br>
             {{p.created_at}}<br>
             {{p.content}}<br>
         {% endfor %}
+    </h4>
+
+    <h4>
+        이 위치에 댓글을 넣으려 함
     </h4>
 </body>
 </html>
