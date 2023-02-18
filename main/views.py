@@ -28,4 +28,10 @@ def landing(request):
         request,
         'main/landing.html'
     )
+
+def aboutme(request):
+    return render(
+        request,
+        'main/about_me.html'
+    )
 # Create your views here.

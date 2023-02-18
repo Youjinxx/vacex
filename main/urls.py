@@ -6,7 +6,7 @@ urlpatterns=[
     path('',views.landing),
     path('<int:pk>/', views.post_detail),
     path('index/', views.index),
-    
+    path('aboutme/', views.aboutme),
     
     
 
