@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("main/", include('main.urls')), #main의 url을 포함한다. main에 url.py 파일을 만든다.
+    path("", include('main.urls')), #main의 url을 포함한다. main에 url.py 파일을 만든다.
+    path("accounts/", include('accounts.urls')),
 ]

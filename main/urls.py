@@ -3,10 +3,10 @@ from . import views
 
 # urls.py 
 urlpatterns=[
-    path('',views.landing),
-    path('<int:pk>/', views.post_detail),
-    path('index/', views.index),
-    path('aboutme/', views.aboutme),
+    path('',views.landing, name= "landing"),
+    path('<int:pk>/', views.post_detail, name="detail"),
+    path('index/', views.index, name="index"),
+    path('aboutme/', views.aboutme, name="aboutme"),
     
     
 
